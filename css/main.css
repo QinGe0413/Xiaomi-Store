@@ -1,0 +1,243 @@
+/* 主体部份 */
+.main{
+    overflow: hidden;
+    width: 100%;
+    padding: 4px 0 12px;
+    background-color: #f5f5f5;
+}
+.main-banner-box{
+    margin: 22px 0;
+    overflow: hidden;
+}
+.box-hd{
+    position: relative;
+    height: 58px;
+}
+.title{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.more{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+}
+.more>a>i{
+    display: inline-block;
+    margin-left: 4px;
+    width: 20px;
+    height: 22px;
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    font-size: 12px;
+    transition: all .2s;
+}
+.more-text{
+    transition: all .2s;
+}
+.more:hover .more-text{
+    color: #ff6700;
+}
+.more:hover.more>a>i{
+    background-color:#ff6700;
+}
+
+/* 手机图片部份样式 */
+.phone-box{
+    width: 100%;
+    height: 614px;
+}
+.phone-box-left{
+    float: left;
+    width: 234px;
+    height: 614px;
+    transition: all .2s linear;
+}
+.phone-box-right,
+.elc-right{
+    float: left;
+    width: 992px;
+    height: 614px;
+}
+.goods{
+    float: left;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+.goods:hover,
+.phone-box-left:hover{
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+}
+.goods-img{
+    width: 160px;
+    margin: 20px 37px 18px;
+}
+.goods-title,
+.goods-desc,
+.goods-price{
+    width: 214px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.goods-title{
+    height: 21px;
+    margin: 0 auto 2px;
+    font-size: 14px;
+}
+.goods-desc{
+    height: 18px;
+    margin: 0 auto 10px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.goods-price{
+    margin: 0 10px 14px;
+    color: #ff6700;
+}
+/* 家电样式 star*/
+.elc-left{
+    float: left;
+    width: 234px;
+    height: 614px;
+}
+.elc-left .goods{
+    margin-left: 0;
+}
+.goods-price>del{
+    color: #b0b0b0;
+    margin-left: 7px;
+}
+.goods-rt{
+    width: 234px;
+    height: 300px;
+    float: left;
+    margin-left: 14px;
+}
+.goods-rt div:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+}
+.goods-rt div{
+    width: 234px;
+    height: 143px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    transition: all .2s;
+}
+.goods-rt-desc{
+    float: left;
+    width: 84px;
+    height: 42px;
+    margin: 42px 0 0 40px;
+    font-size: 14px;
+    text-align: left;
+}
+.desc-price{
+    color: #ff6700;
+    font-size: 12px;
+}
+.goods-rt-img{
+    float: right;
+    margin: 30px 5px 0 0;
+    width: 80px;
+    height: 80px;
+}
+.goods-rt-bottom{
+    position: relative;
+}
+.goods-rt-more{
+    width: 94px;
+    height: 45px;
+    margin: 0px 110px 0 30px;
+    padding-top: 49px;
+    font-size: 18px;
+    color: #333;
+}
+.goods-rt-more small{
+    display: block;
+    font-size: 12px;
+    color: #757575;
+}
+.goods-rt i{
+    position: absolute;
+    top:50px;
+    right: 60px;
+    font-size: 38px;
+    color: #ff6700;
+} 
+/* 家电样式 end*/
+/* 视频部份的样式 star*/
+.video-box li{
+    float: left;
+    width: 296px;
+    height: 285px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+.video-box li:first-child{
+    margin-left: 0;
+}
+.video-img{
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+.video-text{
+    width: 268px;
+    height: 21px;
+    margin: 28px auto 6px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.video-ellipse{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 36px;
+    height: 24px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 12px;
+    transition: all .2s;
+}
+.video-ellipse>div{
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgb(242, 241, 244);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+.video-img:hover .video-ellipse{
+    background-color: #ff6700;
+    border-color: #ff6700;
+}
+.video-box li{
+    transition: all .2s;
+}
+.video-box li:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+}
+/* 视频部份的样式 end*/
